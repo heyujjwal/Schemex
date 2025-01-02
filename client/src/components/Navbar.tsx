@@ -21,16 +21,31 @@ const Navbar = () => {
                         <Link to="#" className="text-gray-800 text-xl hover:text-blue-800">Schemes</Link>
                         <Link to="#" className="text-gray-800 text-xl hover:text-blue-800">About</Link>
                         <Link to="#" className="text-gray-800 text-xl hover:text-blue-600">Contact</Link>
-                        
+
                         {isAuthenticated ? (
                             <>
-                                <Link to="/profile" className="text-gray-800 text-xl hover:text-blue-600">Profile</Link>
-                                <button onClick={logout} className="text-gray-800 text-xl hover:text-blue-600">Logout</button>
+                                <Link to="/profile" className="bg-gray-400 text-white px-4 py-2 rounded-md hover:bg-gray-500">Profile</Link>
+                                <button 
+                                    onClick={logout} 
+                                    className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600"
+                                >
+                                    Logout
+                                </button>
                             </>
                         ) : (
                             <>
-                                <Link to="/login" className="text-gray-800 text-xl hover:text-blue-600">Login</Link>
-                                <Link to="/signup" className="text-gray-800 text-xl hover:text-blue-600">Sign Up</Link>
+                                <Link 
+                                    to="/login" 
+                                    className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600"
+                                >
+                                    Login
+                                </Link>
+                                <Link 
+                                    to="/signup" 
+                                    className="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600"
+                                >
+                                    Sign Up
+                                </Link>
                             </>
                         )}
                     </div>
@@ -50,16 +65,36 @@ const Navbar = () => {
                         <Link to="#" className="block px-3 py-2 text-gray-600 hover:bg-blue-50 rounded-md">Schemes</Link>
                         <Link to="#" className="block px-3 py-2 text-gray-600 hover:bg-blue-50 rounded-md">About</Link>
                         <Link to="#" className="block px-3 py-2 text-gray-600 hover:bg-blue-50 rounded-md">Contact</Link>
-                        
+
                         {isAuthenticated ? (
                             <>
-                                <Link to="/profile" className="block px-3 py-2 text-gray-800 text-xl hover:text-blue-600">Profile</Link>
-                                <button onClick={logout} className="block w-full text-left px-3 py-2 text-gray-800 text-xl hover:text-blue-600">Logout</button>
+                                <Link 
+                                    to="/profile" 
+                                    className="block px-3 py-2 bg-gray-400 text-white rounded-md hover:bg-gray-500"
+                                >
+                                    Profile
+                                </Link>
+                                <button 
+                                    onClick={logout} 
+                                    className="block w-full text-left px-3 py-2 bg-red-500 text-white rounded-md hover:bg-red-600"
+                                >
+                                    Logout
+                                </button>
                             </>
                         ) : (
                             <>
-                                <Link to="/login" className="block px-3 py-2 text-gray-800 text-xl hover:text-blue-600">Login</Link>
-                                <Link to="/signup" className="block px-3 py-2 text-gray-800 text-xl hover:text-blue-600">Sign Up</Link>
+                                <Link 
+                                    to="/login" 
+                                    className="block px-3 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                                >
+                                    Login
+                                </Link>
+                                <Link 
+                                    to="/signup" 
+                                    className="block px-3 py-2 bg-green-500 text-white rounded-md hover:bg-green-600"
+                                >
+                                    Sign Up
+                                </Link>
                             </>
                         )}
                     </div>
