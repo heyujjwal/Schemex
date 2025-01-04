@@ -2,36 +2,36 @@ import Navbar from './components/Navbar';
 import SearchBar from './components/SearchBar';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
-import { BrowserRouter as Router , Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignUp from './pages/auth/signup';
 import Login from './pages/auth/login';
-// import { useState } from 'react';
 import Profile from './pages/Profile';
 import { AuthProvider } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
 import PrivateRoute from './components/PrivateRoute';
 
 function App() {
-  // const [authToken, setAuthToken] = useState<string | null>(null);
   return (
     <AuthProvider>
-      <Router>
-        <div className="min-h-screen flex flex-col">
-          <Navbar />
-          
-          <main className="flex-grow flex flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 px-4 mt-2">
-            <Routes>
-              <Route path="/" element={
-                <>
-                  <img className='mt-1' src="https://www.myscheme.gov.in/_next/image?url=https%3A%2F%2Fcdn.myscheme.in%2Fimages%2Fslideshow%2F1-full.webp&w=1920&q=75" alt="" />
-                  <div className="text-center mb-8">
-                    <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2 mb-4">
-                      Find the Right Scheme for You
-                    </h1>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                      Search through thousands of government schemes and programs designed to help you
-                    </p>
-                  </div>
-                  <SearchBar />
+      <ThemeProvider>
+        <Router>
+          <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 transition-colors duration-200">
+            <Navbar />
+            
+            <main className="flex-grow flex flex-col items-center justify-center bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 px-4 mt-2">
+              <Routes>
+                <Route path="/" element={
+                  <>
+                    <img className='mt-1' src="https://www.myscheme.gov.in/_next/image?url=https%3A%2F%2Fcdn.myscheme.in%2Fimages%2Fslideshow%2F1-full.webp&w=1920&q=75" alt="" />
+                    <div className="text-center mb-8">
+                      <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-2 mb-4">
+                        Find the Right Scheme for You
+                      </h1>
+                      <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                        Search through thousands of government schemes and programs designed to help you
+                      </p>
+                    </div>
+                    <SearchBar />
           
           <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -72,15 +72,15 @@ function App() {
                 </PrivateRoute>
               } />
             </Routes>
-          </main>
+            </main>
 
-          <Footer />
-          <Chatbot />
-        </div>
-      </Router>
-    </AuthProvider>
-        
-  );
+<Footer />
+<Chatbot />
+</div>
+</Router>
+</ThemeProvider>
+</AuthProvider>
+);
 }
 
 export default App;
