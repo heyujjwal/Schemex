@@ -9,6 +9,7 @@ import Profile from './pages/Profile';
 import { AuthProvider } from './context/AuthContext';
 import { ThemeProvider } from './context/ThemeContext';
 import PrivateRoute from './components/PrivateRoute';
+import FieldSchemes from './components/FieldSchemes';
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
               } />
               <Route path="/signup" element={<SignUp />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/scheme" element={<FieldSchemes/>} />
               <Route path="/profile" element={
                 <PrivateRoute>
                   <Profile />

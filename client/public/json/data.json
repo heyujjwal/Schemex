@@ -1,0 +1,65 @@
+{
+    "schemes": [
+      {
+        "name": "Support for Value Addition - Support to R&G units",
+        "detail": "Ministry Of Commerce And Industry",
+        "description": "This scheme aims to enhance the quality of coffee products and achieve value addition through the introduction of improved technologies in roasting, grinding, and packaging which will result in boosting domestic coffee consumption and entrepreneurship in the coffee sector.",
+        "category": ["Agriculture", "Direct Benefit Transfer", "Farmer", "Financial Assistance", "Subsidy"]
+      },
+      {
+        "name": "Atma Nirbhar Bagwani Yojana",
+        "detail": "Arunachal Pradesh",
+        "description": "The schemes are part of the Atma Nirbhar program announced during the Budget session held in February this year. A total amount of Rs 120 crores – Rs 60 crore for each scheme – has been allocated to the two concerned departments of Agriculture and Horticulture.",
+        "category": ["Farmers", "Subsidy", "Umbrella Scheme"]
+      },
+      {
+        "name": "Natural Calamity Relief to Fishermen of State",
+        "detail": "Goa",
+        "description": "This scheme by the Dept of Fisheries, Govt of Goa, provides financial assistance to active fishermen who contribute to the Fishermen Corpus Relief Fund, whose fishing vessels are damaged or lost due to natural calamities.",
+        "category": ["Crisis", "Disaster", "Financial Assistance", "Fishermen", "Relief"]
+      },
+      {
+        "name": "Financial Assistance for the Purchase of Lifejackets and Lifebuoys for Fishermen",
+        "detail": "Goa",
+        "description": "This scheme by the Dept. of Fisheries, Govt. of Goa, provides financial assistance amounting to 50% to eligible fishermen for the purchase of lifejackets and lifebuoys.",
+        "category": ["Financial Assistance", "Fish", "Fisheries", "Fishermen"]
+      },
+      {
+        "name": "Coffee Development Programme in North Eastern Region: Quality Upgradation / Certification: Support for Eco-Certification / Organic Certification",
+        "detail": "Ministry Of Commerce And Industry",
+        "description": "The scheme aims to encourage coffee growers to improve quality for higher returns and access high-value specialty markets through the production of eco-certified coffees. It also encourages small growers to form groups/collectives for eco-certification.",
+        "category": ["Agriculture", "DBT", "Farmer", "Subsidy"]
+      },
+      {
+        "name": "Subsidy for the Purchase of Fiber-reinforced Plastic Cattamaran/ Vallam/ Wooden Nava/ Marine Plywood Canoe With Nets",
+        "detail": "Puducherry",
+        "description": "This scheme provides subsidies to fishermen for the procurement of fiber-reinforced plastic vallam with nets to increase marine fish production.",
+        "category": ["Boat", "Financial Assistance", "Fisherman", "Procurement", "Subsidy"]
+      },
+      {
+        "name": "Financial Assistance to Purchase/Construct New Fishing Craft less than 26 feet for Fishing in Inland Waters of Goa",
+        "detail": "Goa",
+        "description": "The scheme uplifts traditional fishermen by providing subsidies on the construction or purchase of fishing craft less than 26 feet for inland water fishing. Applications are accepted only offline.",
+        "category": ["Financial Assistance", "Fish", "Fishermen", "Subsidy"]
+      },
+      {
+        "name": "Stipend Scheme For Poultry Farming Training For Weaker Section",
+        "detail": "Gujarat",
+        "description": "Launched by the Department of Agriculture, Farmers Welfare & Co-operation, this scheme raises the income of poultry farmers by providing scientific poultry farming training and stipend.",
+        "category": ["Cash Assistance", "Poultry Farming", "Stipend", "Training", "Weaker Section"]
+      },
+      {
+        "name": "Development Support for Coffee in Traditional Areas: Eco-certification of Coffee",
+        "detail": "Ministry Of Commerce And Industry",
+        "description": "This scheme encourages coffee growers to access high-value specialty markets through eco-certified coffee production, ensuring higher returns by adhering to set standards.",
+        "category": ["Agriculture", "Coffee", "DBT", "Farmer", "Subsidy"]
+      },
+      {
+        "name": "Financial Assistance to Mussel Culture and Oyster Farming in Goa",
+        "detail": "Goa",
+        "description": "The Dept. of Fisheries, Govt. of Goa, provides financial assistance to fishermen for setting up mussel culture and oyster farming units in estuarine waters and open sea. Applications are accepted only offline.",
+        "category": ["Aquaculture", "Financial Assistance", "Fish", "Fishermen", "Subsidy"]
+      }
+    ]
+}
+  

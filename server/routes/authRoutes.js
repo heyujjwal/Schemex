@@ -86,5 +86,22 @@ router.get('/profile', authMiddleware, async (req, res) => {
         res.status(500).json({ error: 'Server error' });
     }
 });
+router.get('/scheme', authMiddleware, async (req, res) => {
+    console.log("sdaasd")
+    try {
+        const result = await pool.query(
+            'SELECT name, detail, description FROM schemes_tables'
+        );
+        console.log(res.json());
+        if (result.rows.length === 0) {
+            return res.status(404).json({ error: 'User not found' });
+        }
+        
+        res.json(result.rows[0]);
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Server error' });
+    }
+});
 
 module.exports = router;
